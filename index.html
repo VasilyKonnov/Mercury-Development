@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Тестовое задание для Mercury development</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="main"> 
+        <div class="bg-img-wrapper">    
+            <!-- <div class="container">     -->
+                <div class="logo">
+                    <img src="img/Logo.svg" alt="Logo Mercury Developers">
+                </div>        
+                <div class="login-wrapper">
+                    <h1 class="login-wrapper__h1">Log In</h1>
+
+                    <form id="form" class="login-wrapper__form" method="post" action="https://us-central1-mercdev-academy.cloudfunctions.net/login">        
+                        <input type="text" name ="email" placeholder="E-Mail">                
+                        <input type="password" name ="password" placeholder="Password">        
+                        <button type="button" class="btn-sub">Login</button>
+                    </form>
+
+                </div>    
+            </div>
+        <!-- </div> -->
+    </main>
+    <script src="js/loginpersone.js"></script>
+    <script src="js/common.js"></script>
+</body>
+</html>
