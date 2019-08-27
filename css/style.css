@@ -87,7 +87,7 @@ body {
   font-family: "GothamProRegular";
 }
 .login-wrapper__form input:last-of-type{
-  margin-bottom: 45px;
+  margin-bottom: 0px;
 }
 .login-wrapper__form button{
   display: block;
@@ -96,7 +96,7 @@ body {
   border-radius: 100px;
   width: 146px;
   height: 48px;
-  margin: 0 auto;
+  margin: 48px auto 0;
   border: 0;
   font-size: 14px;
   color:#FFFFFF;
@@ -119,16 +119,27 @@ body {
 }
 .login-wrapper__form .validator-success{
     border: 1px solid transparent;
+    color: #4f4f4f; 
 }
 .login-wrapper__form .validator-error{
   border: 1px solid #ED4159;
   color: #ED4159;
 }
+.login-wrapper__form .validator-error:active{
+  border: 1px solid #ED4159;
+  color: #ED4159;
+}
+.login-wrapper__form .validator-error:-webkit-autofill{
+  -webkit-text-fill-color: #ED4159;
+}
+.login-wrapper__form .validator-error:-webkit-autofill:focus{
+  -webkit-text-fill-color: #ED4159;
+}
 .error-message{
     display: flex;
     align-items: center;
     min-height: 40px;
-    margin:4px auto 48px;
+    margin:32px auto 0px;
     padding: 0px 16px;
 
     background: rgba(237, 65, 89, 0.25);
@@ -224,7 +235,7 @@ body {
     margin-bottom: 26px;
   }
   .login-wrapper__form input:last-of-type {
-    margin-bottom: 28px;
+    margin-bottom: 0px;
   }
 }
 @media screen and (max-width: 1360px) {
@@ -250,7 +261,12 @@ body {
  .wrapper-result{
    max-width: 450px;
    width: 85%;
- }
+ } 
+.login-wrapper__form button{
+  margin: 40px auto 0;
+}
+.error-message{
+  margin-top: 24px;
 }
 @media screen and (max-width: 480px) {
  .logo{
@@ -291,6 +307,6 @@ body {
    margin-bottom: 22px;
  }
  .login-wrapper__form input:last-of-type {
-   margin-bottom: 38px;
+   margin-bottom: 0px;
  }
 }

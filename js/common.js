@@ -1,6 +1,6 @@
-const valid = new LogInPersone(
+const logInPersone = new LogInPersone(
     {
         id: 'form',
-        buttonSubmitClass: '.btn-sub'
+        buttonSubmitClass: 'btn-sub'
     }
 );

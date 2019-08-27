@@ -10,14 +10,13 @@
 <body>
     <main class="main"> 
         <div class="bg-img-wrapper">    
-            <!-- <div class="container">     -->
                 <div class="logo">
                     <img src="img/Logo.svg" alt="Logo Mercury Developers">
                 </div>        
                 <div class="login-wrapper">
                     <h1 class="login-wrapper__h1">Log In</h1>
 
-                    <form id="form" class="login-wrapper__form" method="post" action="https://us-central1-mercdev-academy.cloudfunctions.net/login">        
+                    <form id="form" class="login-wrapper__form">        
                         <input type="text" name ="email" placeholder="E-Mail">                
                         <input type="password" name ="password" placeholder="Password">        
                         <button type="button" class="btn-sub">Login</button>
@@ -25,8 +24,8 @@
 
                 </div>    
             </div>
-        <!-- </div> -->
     </main>
+    <script src="js/validator.js"></script>
     <script src="js/loginpersone.js"></script>
     <script src="js/common.js"></script>
 </body>
