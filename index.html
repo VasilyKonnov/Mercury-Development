@@ -8,25 +8,41 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <main class="main"> 
-        <div class="bg-img-wrapper">    
-                <div class="logo">
-                    <img src="img/Logo.svg" alt="Logo Mercury Developers">
-                </div>        
-                <div class="login-wrapper">
-                    <h1 class="login-wrapper__h1">Log In</h1>
+    <main class="main">
+        <div class="background-log-in">
 
-                    <form id="form" class="login-wrapper__form">        
-                        <input type="text" name ="email" placeholder="E-Mail">                
-                        <input type="password" name ="password" placeholder="Password">        
-                        <button type="button" class="btn-sub">Login</button>
-                    </form>
-
-                </div>    
+            <!-- START Logo  -->
+            <!--             
+                В блоке с логотипом я использую два класса в которых разделяю ответственность за представление блока и
+            его позиционирование, таким образом пытаюсь предусмотреть использование этого блока в другом месте сайта
+            где можно будет задать ему другой класс ответственный за позиционирование, кторый будет актуальным 
+            в соответствующем контексте
+            -->
+            <div class="logo-log-in logo-log-in_layout">
+                <img class="logo-log-in__img" src="img/Logo.svg" alt="Logo Mercury Developers">
             </div>
+            <!-- Так же понимаю что можно ещё больше разделить ответственность между стилями и добиться ещё большей гибкости
+            например вывести правила для ширины и высоты блока в отдельный класс
+
+            Буду признателен за указание более правильного и практического подхода который используеться в реальных проектах.
+            -->
+            <!-- END Logo -->
+
+            <!-- START  log-in-box-->
+            <!-- Так же использую разделение ответственности между классами -->            
+            <div class="log-in-box log-in-box_layout">
+                <h1 class="log-in-box__h1">Log In</h1>
+                <!-- START  form-log-in -->
+                <form id="form-log-in" class="form-log-in">
+                    <input class="form-log-in__input" type="text" name ="email" placeholder="E-Mail">
+                    <input class="form-log-in__input" type="password" name ="password" placeholder="Password">
+                    <button class="form-log-in__button" type="button">Login</button>
+                </form>
+                <!-- END form-log-in -->
+            </div>
+            <!-- END  log-in-box-->
+        </div>
     </main>
-    <script src="js/validator.js"></script>
-    <script src="js/loginpersone.js"></script>
     <script src="js/common.js"></script>
 </body>
 </html>
